@@ -22,8 +22,8 @@ namespace Core {
 		static const int Queen = 5;
 		static const int King = 6;
 		
-		const int Black = 0;
-		const int Black = 8;
+		static const int White = 0;
+		static const int Black = 8;
 
 		const int TypeMask = 0b0111;
 		const int ColourMask = 0b1000;

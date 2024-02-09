@@ -13,7 +13,6 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 
 project "Mayze"
-	location "chess"
 	kind "ConsoleApp"
 	language "C++"
 	cppdialect "C++20"
@@ -22,10 +21,10 @@ project "Mayze"
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files {
-		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp",
+		"src/**.h",
+		"src/**.cpp",
 	}
 
 	includedirs {
-		"%{prj.name}/src"
+		"src"
 	}
